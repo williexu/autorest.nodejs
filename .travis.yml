@@ -5,6 +5,8 @@ node_js:
 install:
     # dotnet 2.0 prereq
   - sudo apt-get install libunwind8
+    # Install npm
+  - npm install
 before_script:
   - npm install -g gulp-cli
 script: gulp testci
